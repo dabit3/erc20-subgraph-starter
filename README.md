@@ -1,12 +1,16 @@
 ## To deploy this subgraph
 
-1. Clone the repo:
+1. Create a new subgraph in The Graph Hosted service
+
+You will then have a `username/subgraphname` that you will use later.
+
+2. Clone the repo:
 
 ```
 git clone git@github.com:dabit3/erc20-subgraph-starter.git
 ```
 
-2. Install dependencies
+3. Install dependencies
 
 ```sh
 npm install
@@ -16,7 +20,7 @@ npm install
 yarn
 ````
 
-3. Update the `deploy` script in `package.json` to match the name of your subgraph:
+4. Update the `deploy` script in `package.json` to match the name of your subgraph:
 
 ```javascript
 "deploy": "graph deploy --node https://api.thegraph.com/deploy/ dabit3/erc20subgraphtst"
@@ -26,4 +30,20 @@ dabit3/erc20subgraphtst"
 
 # to 
 your-username/your-subgraphname"
+```
+
+Example query
+
+```graphql
+{
+  accounts {
+    ERC20balances {
+      id 
+      value
+      contract {
+        name
+      }
+    }
+  }
+}
 ```
