@@ -18,10 +18,10 @@ yarn
 
 3. Update the `deploy` script in `package.json` to match the name of your subgraph:
 
-```json
+```javascript
 "deploy": "graph deploy --node https://api.thegraph.com/deploy/ dabit3/erc20subgraphtst"
 
-# update 
+# update
 dabit3/erc20subgraphtst"
 
 # to 
