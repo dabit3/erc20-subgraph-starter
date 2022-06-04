@@ -32,6 +32,18 @@ dabit3/erc20subgraphtst"
 your-username/your-subgraphname"
 ```
 
+5. Authenticate
+
+```sh
+graph auth
+```
+
+6. Deploy
+
+```sh
+yarn deploy
+```
+
 Example query
 
 ```graphql
