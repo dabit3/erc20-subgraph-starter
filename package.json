@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "graph deploy --product hosted-service sarahschwartz/mva"
+    "build": "graph build generated/sample.subgraph.yaml",
+    "codegen": "graph codegen generated/sample.subgraph.yaml",
+    "deploy": "graph deploy --ipfs https://api.thegraph.com/ipfs/  --node https://api.thegraph.com/deploy/ sarahschwartz/mva generated/sample.subgraph.yaml"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/subgraphs": "^0.1.8"
+    "@openzeppelin/subgraphs": "^0.1.8",
+    "@protofire/subgraph-toolkit": "^0.1.2"
   }
 }

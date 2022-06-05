@@ -23,15 +23,12 @@ import {
 	fetchERC721Operator,
 } from '../fetch/erc721'
 
-import { integer } from '@protofire/subgraph-toolkit'
-
 export function handleTransfer(event: TransferEvent): void {
 	let contract = fetchERC721(event.address)
 	if (contract != null) {
 		let token = fetchERC721Token(contract, event.params.tokenId)
 		let from  = fetchAccount(event.params.from)
 		let to    = fetchAccount(event.params.to)
-		// from.totalTransactions = integer.increment(from.totalTransactions)
 
 		token.owner = to.id
 
@@ -82,9 +79,9 @@ export function handleApprovalForAll(event: ApprovalForAllEvent): void {
 		let operator   = fetchAccount(event.params.operator)
 		let delegation = fetchERC721Operator(contract, owner, operator)
 
-		// delegation.approved = event.params.approved
+		delegation.approved = event.params.approved
 
-		// delegation.save()
+		delegation.save()
 
 		// 	let ev = new ApprovalForAll(events.id(event))
 		// 	ev.emitter     = contract.id

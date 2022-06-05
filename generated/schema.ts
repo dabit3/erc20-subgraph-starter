@@ -42,6 +42,15 @@ export class Account extends Entity {
     this.set("id", Value.fromBytes(value));
   }
 
+  get totalTransactions(): BigInt {
+    let value = this.get("totalTransactions");
+    return value!.toBigInt();
+  }
+
+  set totalTransactions(value: BigInt) {
+    this.set("totalTransactions", Value.fromBigInt(value));
+  }
+
   get asERC721(): Bytes | null {
     let value = this.get("asERC721");
     if (!value || value.kind == ValueKind.NULL) {
