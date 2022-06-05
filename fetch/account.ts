@@ -1,5 +1,6 @@
 import {
 	Address,
+	log
 } from '@graphprotocol/graph-ts'
 
 import {
