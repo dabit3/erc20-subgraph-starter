@@ -9,11 +9,11 @@ import {
 	ERC721Contract,
 	ERC721Token,
 	ERC721Operator,
-} from '../../generated/schema'
+} from '../generated/schema'
 
 import {
 	IERC721,
-} from '../../generated/erc721/IERC721'
+} from '../generated/erc721/IERC721'
 
 import {
 	constants,

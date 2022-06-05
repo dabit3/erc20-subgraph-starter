@@ -1,12 +1,12 @@
 import {
 	ERC721Transfer,
-} from '../../generated/schema'
+} from '../generated/schema'
 
 import {
 	Approval       as ApprovalEvent,
 	ApprovalForAll as ApprovalForAllEvent,
 	Transfer       as TransferEvent,
-} from '../../generated/erc721/IERC721'
+} from '../generated/erc721/IERC721'
 
 import {
 	events,
