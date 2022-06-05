@@ -1,6 +1,6 @@
 specVersion: 0.0.4
 schema:
-  file: schema.graphql
+  file: ./generated/schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: erc20
@@ -17,13 +17,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-1
     network: mainnet
@@ -39,13 +39,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-1/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-2
     network: mainnet
@@ -61,13 +61,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-2/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-3
     network: mainnet
@@ -83,13 +83,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-3/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-4
     network: mainnet
@@ -104,13 +104,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-4/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-5
     network: mainnet
@@ -125,13 +125,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-5/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-6
     network: mainnet
@@ -146,13 +146,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-6/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-7
     network: mainnet
@@ -167,13 +167,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-7/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-8
     network: mainnet
@@ -188,13 +188,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-8/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-9
     network: mainnet
@@ -209,13 +209,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-9/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-10
     network: mainnet
@@ -230,13 +230,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-10/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-11
     network: mainnet
@@ -251,13 +251,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-11/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-12
     network: mainnet
@@ -272,13 +272,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-12/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-13
     network: mainnet
@@ -293,13 +293,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-13/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-14
     network: mainnet
@@ -314,13 +314,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-14/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-15
     network: mainnet
@@ -335,13 +335,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-15/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-16
     network: mainnet
@@ -356,13 +356,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-16/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-17
     network: mainnet
@@ -377,13 +377,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-17/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-18
     network: mainnet
@@ -398,13 +398,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-18/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-19
     network: mainnet
@@ -419,13 +419,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-19/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-20
     network: mainnet
@@ -440,13 +440,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-20/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-21
     network: mainnet
@@ -461,13 +461,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-21/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-22
     network: mainnet
@@ -482,13 +482,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-22/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-23
     network: mainnet
@@ -503,13 +503,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-23/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-24
     network: mainnet
@@ -524,13 +524,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-24/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-25
     network: mainnet
@@ -545,13 +545,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-25/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-26
     network: mainnet
@@ -566,13 +566,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-26/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-27
     network: mainnet
@@ -587,13 +587,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-27/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-28
     network: mainnet
@@ -608,13 +608,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-28/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-29
     network: mainnet
@@ -629,13 +629,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-29/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-30
     network: mainnet
@@ -650,13 +650,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-30/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-31
     network: mainnet
@@ -671,13 +671,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-31/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-32
     network: mainnet
@@ -692,13 +692,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-32/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-33
     network: mainnet
@@ -713,13 +713,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-33/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-34
     network: mainnet
@@ -734,13 +734,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-34/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-35
     network: mainnet
@@ -755,13 +755,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-35/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-36
     network: mainnet
@@ -776,13 +776,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-36/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-37
     network: mainnet
@@ -797,13 +797,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-37/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-38
     network: mainnet
@@ -818,13 +818,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-38/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-39
     network: mainnet
@@ -839,13 +839,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-39/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-40
     network: mainnet
@@ -860,13 +860,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-40/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-41
     network: mainnet
@@ -881,13 +881,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-41/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-42
     network: mainnet
@@ -902,13 +902,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-42/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-43
     network: mainnet
@@ -923,13 +923,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-43/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-44
     network: mainnet
@@ -944,13 +944,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-44/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-45
     network: mainnet
@@ -965,13 +965,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-45/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-46
     network: mainnet
@@ -986,13 +986,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-46/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-47
     network: mainnet
@@ -1007,13 +1007,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-47/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-48
     network: mainnet
@@ -1028,13 +1028,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-48/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-49
     network: mainnet
@@ -1049,13 +1049,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-49/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-50
     network: mainnet
@@ -1070,13 +1070,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-50/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-51
     network: mainnet
@@ -1091,13 +1091,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-51/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-52
     network: mainnet
@@ -1112,13 +1112,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-52/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-53
     network: mainnet
@@ -1133,13 +1133,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-53/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-54
     network: mainnet
@@ -1154,13 +1154,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-54/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-55
     network: mainnet
@@ -1175,13 +1175,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-55/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-56
     network: mainnet
@@ -1196,13 +1196,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-56/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-57
     network: mainnet
@@ -1217,13 +1217,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-57/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-58
     network: mainnet
@@ -1238,13 +1238,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-58/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-59
     network: mainnet
@@ -1259,13 +1259,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-59/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-60
     network: mainnet
@@ -1280,13 +1280,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-60/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-61
     network: mainnet
@@ -1301,13 +1301,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-61/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-62
     network: mainnet
@@ -1322,13 +1322,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-62/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-63
     network: mainnet
@@ -1343,13 +1343,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-63/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-64
     network: mainnet
@@ -1364,13 +1364,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-64/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-65
     network: mainnet
@@ -1385,13 +1385,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-65/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-66
     network: mainnet
@@ -1406,13 +1406,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-66/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-67
     network: mainnet
@@ -1427,13 +1427,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-67/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-68
     network: mainnet
@@ -1448,13 +1448,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-68/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-69
     network: mainnet
@@ -1469,13 +1469,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-69/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-70
     network: mainnet
@@ -1490,13 +1490,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-70/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-71
     network: mainnet
@@ -1511,13 +1511,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-71/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-72
     network: mainnet
@@ -1532,13 +1532,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-72/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-73
     network: mainnet
@@ -1553,13 +1553,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-73/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-74
     network: mainnet
@@ -1574,13 +1574,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-74/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-75
     network: mainnet
@@ -1595,13 +1595,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-75/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-76
     network: mainnet
@@ -1616,13 +1616,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-76/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-77
     network: mainnet
@@ -1637,13 +1637,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-77/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-78
     network: mainnet
@@ -1658,13 +1658,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-78/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-79
     network: mainnet
@@ -1679,13 +1679,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-79/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-80
     network: mainnet
@@ -1700,13 +1700,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-80/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-81
     network: mainnet
@@ -1721,13 +1721,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-81/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-82
     network: mainnet
@@ -1742,13 +1742,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-82/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-83
     network: mainnet
@@ -1763,13 +1763,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-83/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-84
     network: mainnet
@@ -1784,13 +1784,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-84/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-85
     network: mainnet
@@ -1805,13 +1805,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-85/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-86
     network: mainnet
@@ -1826,13 +1826,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-86/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-87
     network: mainnet
@@ -1847,13 +1847,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-87/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-88
     network: mainnet
@@ -1868,13 +1868,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-88/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-89
     network: mainnet
@@ -1889,13 +1889,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-89/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-90
     network: mainnet
@@ -1910,13 +1910,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-90/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-91
     network: mainnet
@@ -1931,13 +1931,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-91/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-92
     network: mainnet
@@ -1952,13 +1952,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-92/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-93
     network: mainnet
@@ -1973,13 +1973,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-93/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-94
     network: mainnet
@@ -1994,13 +1994,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-94/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-95
     network: mainnet
@@ -2015,13 +2015,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-95/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-96
     network: mainnet
@@ -2036,13 +2036,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-96/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-97
     network: mainnet
@@ -2057,13 +2057,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-97/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-98
     network: mainnet
@@ -2078,13 +2078,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-98/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-99
     network: mainnet
@@ -2099,13 +2099,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-99/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-100
     network: mainnet
@@ -2120,13 +2120,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-100/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-101
     network: mainnet
@@ -2141,13 +2141,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-101/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-102
     network: mainnet
@@ -2162,13 +2162,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-102/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-103
     network: mainnet
@@ -2183,13 +2183,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-103/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-104
     network: mainnet
@@ -2204,13 +2204,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-104/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-105
     network: mainnet
@@ -2225,13 +2225,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-105/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-106
     network: mainnet
@@ -2246,13 +2246,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-106/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-107
     network: mainnet
@@ -2267,13 +2267,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-107/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-108
     network: mainnet
@@ -2288,13 +2288,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-108/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-109
     network: mainnet
@@ -2309,13 +2309,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-109/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-110
     network: mainnet
@@ -2330,13 +2330,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-110/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-111
     network: mainnet
@@ -2351,13 +2351,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-111/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-112
     network: mainnet
@@ -2372,13 +2372,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-112/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-113
     network: mainnet
@@ -2393,13 +2393,13 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-113/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts
   - kind: ethereum/contract
     name: erc20-114
     network: mainnet
@@ -2414,10 +2414,10 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: erc20-114/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: erc20/erc20.wasm
+      file: ./mappings/erc20.ts

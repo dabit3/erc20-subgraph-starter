@@ -1,6 +1,6 @@
-specVersion: 0.0.4
+specVersion: 0.0.2
 schema:
-  file: ./generated/schema.graphql
+  file: sample.schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: erc721
@@ -8,7 +8,6 @@ dataSources:
     source:
       address: "0x3CF57cc9Cf5263748c6f926fF498AC0C6F95B26e"
       abi: IERC721
-      startBlock: 14894921
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -17,7 +16,7 @@ dataSources:
         - ERC721Contract
       abis:
         - name: IERC721
-          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
+          file: ../node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,indexed uint256)
           handler: handleApproval
@@ -25,4 +24,4 @@ dataSources:
           handler: handleApprovalForAll
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ./mappings/erc721.ts
+      file: ../node_modules/@openzeppelin/subgraphs/src/datasources/erc721.ts

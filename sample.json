@@ -1,0 +1,11 @@
+{
+    "output": "generated/sample.",
+    "chain": "mainnet",
+    "datasources": [
+      {
+        "address": "0x3CF57cc9Cf5263748c6f926fF498AC0C6F95B26e",
+        "module": "erc721"
+      }
+    ]
+  }
+  
