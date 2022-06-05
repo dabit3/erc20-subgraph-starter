@@ -42,13 +42,21 @@ export class Account extends Entity {
     this.set("id", Value.fromBytes(value));
   }
 
-  get totalTransactions(): BigInt {
+  get totalTransactions(): BigInt | null {
     let value = this.get("totalTransactions");
-    return value!.toBigInt();
+    if (!value || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toBigInt();
+    }
   }
 
-  set totalTransactions(value: BigInt) {
-    this.set("totalTransactions", Value.fromBigInt(value));
+  set totalTransactions(value: BigInt | null) {
+    if (!value) {
+      this.unset("totalTransactions");
+    } else {
+      this.set("totalTransactions", Value.fromBigInt(<BigInt>value));
+    }
   }
 
   get asERC721(): Bytes | null {

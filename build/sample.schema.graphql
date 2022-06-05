@@ -1,6 +1,6 @@
 type Account @entity {
 	id: Bytes!
-	totalTransactions: BigInt!
+	totalTransactions: BigInt
 	asERC721: ERC721Contract
 	ERC721tokens: [ERC721Token!]! @derivedFrom(field: "owner")
 	ERC721operatorOwner: [ERC721Operator!]! @derivedFrom(field: "owner")

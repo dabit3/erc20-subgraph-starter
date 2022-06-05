@@ -31,7 +31,11 @@ export function handleTransfer(event: TransferEvent): void {
 		let token = fetchERC721Token(contract, event.params.tokenId)
 		let from  = fetchAccount(event.params.from)
 		let to    = fetchAccount(event.params.to)
-		// from.totalTransactions = integer.increment(from.totalTransactions)
+		from.totalTransactions = integer.increment(from.totalTransactions);
+		from.save()
+
+		to.totalTransactions = integer.increment(to.totalTransactions);
+		to.save()
 
 		token.owner = to.id
 
